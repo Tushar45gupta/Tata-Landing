@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap'); 
+* {
+    margin: 0;
+}
+
+nav {
+    height: 90px;
+    width: 100%;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.222);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+nav .nav-items {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+}
+
+nav a::before {
+    content: "";
+    height: 3px;
+    width: 0px;
+    display: inline-block;
+    background-color: black;
+    position: relative;
+    top: 30px;
+    border-radius: 50px;
+}
+
+a:hover::before {
+    width: 100%;
+    transition: all 3s linear;
+}
+
+nav .nav-icon {
+    display: flex;
+    gap: 30px;
+}
+
+.contact {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(71, 78, 78);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 100;
+    box-shadow: -1px -1px 10px black;
+    .call,.test-drive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+.contact svg {
+    animation: zoom-up 0.5s linear infinite alternate;
+    color: white;
+}
+
+@keyframes zoom-up {
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.primary-link {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.home {
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(90deg, transparent 55%, rgb(202,172,124) 55%);
+    display: flex;
+    align-items: center;
+    p {
+        width: 450px;
+        text-align: center;
+    }
+    
+    .home-text {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.home .book-now {
+    font-size: 1rem;
+    position: relative;
+    background: transparent;
+    border: 2px solid blue;
+    color: blue;
+    height: 50px;
+    width: 140px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+    align-items: center;
+    top: 45%;
+    right: 75%;
+}
+
+.primary-head {
+    font-size: 4rem;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+    color: #383737;
+}
+
+.primary-para {
+    font-size: 1.3rem;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 300;
+}
+
+.section-price {
+    height: 80vh;
+    width: 100%;
+    background-color: #383737;
+}
+
+.section-price .price-left {
+    position: relative;
+    color: white;
+    font-size: 1.2rem;
+    left: 8%;
+    top: 7%;
+}
+
+.section-price .price-left .loc {
+    display: flex;
+    font-size: 1.8rem;
+    border: none;
+    background: transparent;
+    color: white;
+    height: 40px;
+    width: 360px;
+    border-bottom: 1px solid white;
+
+    span{
+        margin-left: 200px; 
+    }
+}
+
+
+
